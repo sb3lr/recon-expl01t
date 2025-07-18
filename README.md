@@ -89,8 +89,11 @@
 
 ### 7. البحث عن hijacking للنطاقات الفرعية
 - استخدم `subjack` لفحص النطاقات:
+
   ```bash
-  subjack -w live_subs.txt -t 100 -timeout 30 -o subjack_results.txt
+  wget https://raw.githubusercontent.com/haccer/subjack/master/fingerprints.json
+  subjack -w live_subs.txt -t 10 -timeout 10 -ssl -v -c /home/sb3ly/tools/web/Recon/bin/fingerprints.json
+  
   ```
 
 ### 8. البحث عن الثغرات باستخدام قوالب nuclei
