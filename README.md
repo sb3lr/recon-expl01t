@@ -7,7 +7,6 @@
   <p><em>A comprehensive collection of 50+ security tools for automated reconnaissance and vulnerability discovery</em></p>
   
   ![Tools](https://img.shields.io/badge/Tools-50+-blue)
-  ![Languages](https://img.shields.io/badge/Languages-Go%20%7C%20Python%20%7C%20Rust%20%7C%20C++-green)
   ![License](https://img.shields.io/badge/License-Various-red)
   ![Automation](https://img.shields.io/badge/Automation-Full%20Workflow-orange)
 </div>
