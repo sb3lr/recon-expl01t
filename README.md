@@ -48,7 +48,7 @@ This repository contains a complete bug bounty automation suite with **50+ caref
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/sb3lr/recon-expl01t.git
 cd bug-bounty-tools
 
 # Install all tools (requires sudo)
