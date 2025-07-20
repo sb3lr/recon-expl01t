@@ -334,7 +334,7 @@ Default timeouts can be modified in `auto_recon.sh`:
 
 ### Wordlists
 The script looks for wordlists in common locations:
-- `/home/sb3ly/tools/wordlists/`
+- `/home/sb3lr/tools/wordlists/`
 - `/usr/share/wordlists/`
 - Tool-specific wordlists
 
@@ -404,8 +404,6 @@ Special thanks to all the security researchers and developers who created these 
 
 - **Issues**: Report bugs and feature requests via GitHub Issues
 - **Documentation**: Check individual tool READMEs for specific usage
-- **Community**: Join security communities for discussions and help
-
 ---
 
 <div align="center">
