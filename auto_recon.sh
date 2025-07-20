@@ -502,8 +502,41 @@ $(head -20 urls/http_services.txt 2>/dev/null || echo "No HTTP services found")
 \`\`\`
 
 ### Vulnerabilities
+
+#### Critical & High Severity
 \`\`\`
-$(head -10 vulnerabilities/nuclei.txt 2>/dev/null || echo "No vulnerabilities found by Nuclei")
+$(if [[ -f vulnerabilities/nuclei.txt ]]; then
+    grep -E "\[critical\]|\[high\]" vulnerabilities/nuclei.txt 2>/dev/null || echo "No critical/high severity vulnerabilities found"
+else
+    echo "No vulnerabilities found by Nuclei"
+fi)
+\`\`\`
+
+#### Medium Severity
+\`\`\`
+$(if [[ -f vulnerabilities/nuclei.txt ]]; then
+    grep -E "\[medium\]" vulnerabilities/nuclei.txt 2>/dev/null || echo "No medium severity vulnerabilities found"
+else
+    echo "No vulnerabilities found"
+fi)
+\`\`\`
+
+#### Low Severity
+\`\`\`
+$(if [[ -f vulnerabilities/nuclei.txt ]]; then
+    grep -E "\[low\]" vulnerabilities/nuclei.txt 2>/dev/null || echo "No low severity vulnerabilities found"
+else
+    echo "No vulnerabilities found"
+fi)
+\`\`\`
+
+#### Informational
+\`\`\`
+$(if [[ -f vulnerabilities/nuclei.txt ]]; then
+    grep -E "\[info\]" vulnerabilities/nuclei.txt 2>/dev/null || echo "No informational findings"
+else
+    echo "No vulnerabilities found"
+fi)
 \`\`\`
 
 ### Potential XSS
