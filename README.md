@@ -295,7 +295,7 @@ recon_target.com_20240119_143022/
 ### Example 2: Large Organization Scan
 
 ```bash
-./auto_recon.sh bigcorp.com
+./auto_recon.sh example.com
 ```
 
 **Typical Results:**
